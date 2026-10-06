@@ -13,8 +13,10 @@ make clean lib
 ### CMake
 ```sh
 mkdir build && cd build
-cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/my_libs ..
 cmake --build .
+cmake --install .
+#cmake --build build --target install
 ```
 ## Use library
 ### Manually

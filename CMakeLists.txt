@@ -21,3 +21,21 @@ add_library(llogg STATIC
     llogg.cpp 
     llogg.h
 )
+
+# Określenie, gdzie szukać nagłówków (ułatwia poprawne instalowanie)
+target_include_directories(llogg PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
+    $<INSTALL_INTERFACE:include>
+)
+
+# --- REGUŁY INSTALACJI (install) ---
+
+# Instalacja pliku binarnego biblioteki (libllogg.a)
+install(TARGETS llogg
+    ARCHIVE DESTINATION lib
+)
+
+# Instalacja pliku nagłówkowego (llogg.h)
+install(FILES llogg.h
+    DESTINATION include
+)
