@@ -2,7 +2,7 @@
 #include <iostream>
 #include <chrono>
 #include <string>
-//#include <format> // Wymaga C++20
+#include <format> // Wymaga C++20
 
 using std::cerr;
 using std::cout;
