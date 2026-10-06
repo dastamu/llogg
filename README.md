@@ -1,0 +1,2 @@
+# llogg
+Simple logger library 
