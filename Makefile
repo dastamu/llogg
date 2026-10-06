@@ -1,6 +1,6 @@
 # Zmienne określające kompilator i flagi
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++20
+CXXFLAGS = -Wall -Wextra -std=c++20 -O3
 AR = ar
 ARFLAGS = rcs
 
@@ -10,6 +10,10 @@ EXEC_NAME = test
 
 # Domyślna reguła (wywoływana przez samo wpisanie 'make')
 all: $(LIB_NAME) $(EXEC_NAME)
+
+# Reguła umożliwiająca łatwe wymuszenie wersji debugowej (np. 'make debug')
+debug: CXXFLAGS = -Wall -Wextra -std=c++20 -g -O0
+debug: clean all
 
 # Reguła tworząca bibliotekę statyczną z pliku obiektowego
 $(LIB_NAME): llogg.o
@@ -28,4 +32,4 @@ clean:
 	rm -f *.o *.a $(EXEC_NAME)
 
 # Deklaracja reguł, które nie są fizycznymi plikami
-.PHONY: all clean
+.PHONY: all clean debug

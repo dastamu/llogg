@@ -37,11 +37,11 @@ void llogg_debug(const std::string &message) {
 }
 
 void llogg_info(const std::string &message) {
-  cerr << print_stamp() << " [INFO]: " << message << std::endl;
+  cerr << print_stamp() << " [ INFO]: " << message << std::endl;
 }
 
 void llogg_warn(const std::string &message) {
-  cerr << print_stamp() << " [WARN]: " << message << std::endl;
+  cerr << print_stamp() << " [ WARN]: " << message << std::endl;
 }
 
 void llogg_error(const std::string &message) {
