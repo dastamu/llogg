@@ -11,6 +11,8 @@ EXEC_NAME = test
 # Domyślna reguła (wywoływana przez samo wpisanie 'make')
 all: $(LIB_NAME) $(EXEC_NAME)
 
+lib: $(LIB_NAME)
+
 # Reguła umożliwiająca łatwe wymuszenie wersji debugowej (np. 'make debug')
 debug: CXXFLAGS = -Wall -Wextra -std=c++20 -g -O0
 debug: clean all
