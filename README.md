@@ -18,6 +18,11 @@ cmake --build .
 cmake --install .
 #cmake --build build --target install
 ```
+### Meason
+```sh
+meson setup build
+meson compile -C build
+```
 ## Use library
 ### Manually
 ```sh
