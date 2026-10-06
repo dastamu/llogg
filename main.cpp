@@ -2,7 +2,7 @@
 
 int main() {
     // Wywołanie funkcji z biblioteki
-    print_logg("Coś poszło nie tak w programie!");
+    print_logg("Something is wrong in program!");
 
     llogg_trace("Trace msg");
     llogg_debug("Debug msg");
@@ -10,6 +10,6 @@ int main() {
     llogg_warn("Warn msg");
     llogg_error("Error msg");
     llogg_fatal("Fatal msg");
-    
+
     return 0;
 }

@@ -5,7 +5,7 @@ using std::cerr;
 
 void print_logg(const std::string &message) {
   // std::cerr służy do wypisywania komunikatów o błędach
-  cerr << "BŁĄD: " << message << std::endl;
+  cerr << "ERROR: " << message << std::endl;
 }
 
 void llogg_trace(const std::string &message) {
