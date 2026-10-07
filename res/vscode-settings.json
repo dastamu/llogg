@@ -1,0 +1,21 @@
+// Global settings.json
+// Ctrl+Shift+P >Preferences: Open User Settings (JSON)
+{
+    "clangd.path": "c:\\Users\\dmucha\\AppData\\Roaming\\VSCodium\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\23.1.0\\clangd_23.1.0\\bin\\clangd.exe",
+    "git.autofetch": true,
+    "makefile.configureOnOpen": true,
+    "mesonbuild.downloadLanguageServer": true,
+    "terminal.integrated.profiles.windows": {
+        "MSYS2 UCRT64": {
+            "path": "C:\\bin\\msys64\\usr\\bin\\bash.exe",
+            "args": ["--login", "-i"],
+            "env": {
+                "MSYSTEM": "UCRT64",
+                "CHERE_INVOKING": "1"
+            },
+            "icon": "terminal-bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "MSYS2 UCRT64"
+
+}
