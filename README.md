@@ -1,5 +1,7 @@
 # llogg
-Simple logger library 
+> Simple logger library 
+
+![image](llogg.png)
 
 ## Build library
 ### Manually
