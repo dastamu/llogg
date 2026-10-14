@@ -22,8 +22,7 @@ cmake --install .
 ```
 ### Meason
 ```sh
-meson setup build
-meson compile -C build
+meson setup "build-meson" && meson compile -C "build-meson"
 ```
 ## Use library
 ### Manually
